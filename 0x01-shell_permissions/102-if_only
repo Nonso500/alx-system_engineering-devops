@@ -1,2 +1,4 @@
 #!/bin/bash
-chown betty hello = "guillaume"
+if [ "$(stat -c %U hello)" = "guillaume" ]; then
+chown betty hello
+fi
